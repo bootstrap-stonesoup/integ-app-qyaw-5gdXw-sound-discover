@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-tczg
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: var_name
+          value: test
+        image: quay.io/bootstrap/nbe-e2e-qgbp-tenant/integ-app-qyaw/devfile-sample-python-basic-tczg@sha256:c7a28eae9e3265f90103d5ffb999d36b2d894c5095ab105daa4e589db891a22f
+        name: my-python
+        resources: {}
+status: {}
